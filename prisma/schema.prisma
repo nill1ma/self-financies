@@ -11,11 +11,27 @@ datasource db {
 }
 
 model User {
-  id         String   @id @default(uuid())
+  id         String    @id @default(uuid())
   username   String
   password   String
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now())
+  created_at DateTime  @default(now())
+  updated_at DateTime  @default(now())
+  Expense    Expense[]
 
   @@map("users")
+}
+
+model Expense {
+  id          String   @id @default(uuid())
+  destine     String
+  value       Int
+  payed_value Int
+  pay_day     DateTime
+  due_date    DateTime
+  created_at  DateTime @default(now())
+  updated_at  DateTime @default(now())
+  user        User     @relation(fields: [user_id], references: [id])
+  user_id      String
+
+  @@map("expenses")
 }

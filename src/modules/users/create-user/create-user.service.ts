@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { UserDTO } from '../dto/user.dto';
 import { UsersRepository } from '../repositories/users.repository';
-import { UserAlreadyExist } from '../entities/errors';
+import { UserAlreadyExist } from '../../../entities/errors';
 
 @Injectable()
 export class CreateUserService {

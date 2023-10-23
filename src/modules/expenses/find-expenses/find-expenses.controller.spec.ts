@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { FindExpensesController } from './find_expenses.controller';
-import { FindExpensesService } from './find_expenses.service';
+import { FindExpensesController } from './find-expenses.controller';
+import { FindExpensesService } from './find-expenses.service';
 
 describe('FindExpensesController', () => {
   let controller: FindExpensesController;

@@ -75,3 +75,11 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Swagger
+- http://localhost:3000/api
+
+## Prisma
+
+# Generate prisma migration
+- npx prisma migrate dev 

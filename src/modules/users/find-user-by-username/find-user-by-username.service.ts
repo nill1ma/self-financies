@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { UsersRepository } from '../repositories/users.repository';
-import { User } from '../entities/user';
+import { User } from '../../../entities/user';
 
 @Injectable()
 export class FindUserByUsernameService {
